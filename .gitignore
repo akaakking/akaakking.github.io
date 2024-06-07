@@ -78,9 +78,6 @@ public/
 .deploy*/
 .deploy*/**
 
-# Hexo local config file
-_config.yml
-
 # Other optional Hexo config files
 _config.production.yml
 _config.staging.yml
