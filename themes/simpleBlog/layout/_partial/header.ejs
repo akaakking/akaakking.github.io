@@ -1,16 +1,17 @@
 <header id="header">
   <a class="u-url u-uid" href="<%- url_for("/") %>">
-    <div id="title" style="display: table; margin: 0 auto 20px auto; text-align: center;">
-      <h1 style="display: table-cell; vertical-align: middle;"><%= config.title %></h1>
+  <!-- <img  id="logo"src="<%- url_for("https://avatars.githubusercontent.com/u/81509671?s=48&v=4") %>" /> -->
+    <div id="title" style="margin: 0 auto 20px auto;">
+      <h1><%= config.title %></h1>
     </div>
   </a>
   <div id="nav">
-    <ul style="display: flex; justify-content: center; padding: 0; list-style-type: none;">
+    <ul>
       <li class="icon">
         <a href="#" aria-label="<%- __('icons.menu') %>"><i class="fa-solid fa-bars fa-2x"></i></a>
       </li>
       <% for (var i in theme.nav) { %>
-        <li style="flex: 0 1 auto;"><a href="<%- url_for(theme.nav[i].path) %>"><%= __(theme.nav[i].name)%><img src="<%= theme.nav[i].icon_path %>" title="<%= theme.nav[i].icon_desc %>" width="30px"></a></li>
+        <li><a href="<%- url_for(theme.nav[i].path) %>"><%= __(theme.nav[i].name)%><img src="<%= theme.nav[i].icon_path %> " title="<%= theme.nav[i].icon_desc %>"width="30px"></a></li>
       <% } %>
     </ul>
   </div>
