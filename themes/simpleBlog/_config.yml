@@ -29,12 +29,12 @@ nav:
     icon_desc: 平时的思考
   - 
     name: 
-    path: /about/plan
+    path: /categories/plan
     icon_path: /images/plan.svg
     icon_desc: 长短期规划，与长短期复盘
   -
     name: 
-    path: /archives/fun
+    path: /categories/fun
     icon_path: /images/fun.svg
     icon_desc: 有趣的事情
 
